@@ -2,7 +2,9 @@
 import { css } from '@emotion/react'
 import { useState } from 'react'
 
+// estilos do conteiner 
 const estilos = {
+    // container
     container: css`
     display: flex;
     justify-content: space-around;
@@ -10,7 +12,7 @@ const estilos = {
     flex-wrap: wrap;
     gap: 16px;
   `,
-
+    // div do card
     card: css`
     background-color: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -20,7 +22,6 @@ const estilos = {
     max-width: 100%;
     min-height: 200px;
   `,
-
     titulo: css`
     font-size: 1.5rem;
     margin-bottom: 16px;
@@ -29,7 +30,9 @@ const estilos = {
   `,
 }
 
+// aqui e os estilos do bloco do item
 const estilosItem = {
+    // div do item 
     item: css`
     display: flex;
     flex-direction: column;
@@ -55,7 +58,7 @@ const estilosItem = {
     color: #10b981;
     margin: 0 0 8px;
   `,
-
+    // botao alternando entre as cores 
     botao: (adicionado) => css`
     background-color: ${adicionado ? '#198754' : '#6c757d'};
     margin-top: 8px;
